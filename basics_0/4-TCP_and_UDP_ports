@@ -1,2 +1,3 @@
-#!/usr/bin/env/ bash
+#!/usr/bin/env bash
+#get the lit of all listening ports
 netstat -lp
