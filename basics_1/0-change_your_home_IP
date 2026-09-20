@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 #change localhost/facebook
 sed 's/^127\.0\.0\.1[[:space:]]\+localhost/127.0.0.2 localhost/' /etc/hosts > /tmp/hosts
-sed 's/^.*[[:space:]]facebook\.com$/8.8.8.8 facebook.com/' /tmp/hosts
+sed -i 's/^.*[[:space:]]facebook\.com$/8.8.8.8 facebook.com/' /tmp/hosts
+echo "8.8.8.8 facebook.com" >> /tmp/hosts
 cat /tmp/hosts > /etc/hosts
 rm -f /tmp/hosts
