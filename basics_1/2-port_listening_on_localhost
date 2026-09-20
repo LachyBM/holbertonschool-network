@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#listneing port on local host
+nc -l -p 98
